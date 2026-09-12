@@ -18,7 +18,6 @@ musicToggle.addEventListener("click", function () {
 const envelope = document.getElementById("envelope");
 const envScreen = document.getElementById("envelope-screen");
 const book = document.getElementById("book");
-const bookTapHint = document.getElementById("book-tap-hint");
 let opened = false;
 
 envelope.addEventListener("click", function () {
@@ -32,10 +31,6 @@ envelope.addEventListener("click", function () {
     envScreen.classList.add("hide");
     book.classList.add("ready");
     document.body.style.overflow = "hidden";
-    bookTapHint.classList.add("show");
-    setTimeout(function () {
-      bookTapHint.classList.remove("show");
-    }, 3500);
   }, 950);
 });
 
@@ -53,5 +48,4 @@ document.addEventListener("dblclick", function () {
   envelope.classList.remove("open");
   opened = false;
   book.scrollTop = 0;
-  bookTapHint.classList.remove("show");
 });
