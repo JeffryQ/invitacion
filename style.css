@@ -96,7 +96,7 @@
       .dove-wrap {
         position: absolute;
         left: 50%;
-        top: 13.8%;
+        top: 17%;
         width: 65%;
         transform: translate(-50%, 0);
         animation: floaty 5s ease-in-out infinite;
@@ -183,8 +183,8 @@
       .padres-wrap {
         position: absolute;
         left: 50%;
-        top: 60.5%;
-        width: 68.7%;
+        top: 62%;
+        width: 50%;
         transform: translate(-50%, 0);
         animation: floaty 5.8s ease-in-out infinite;
       }
