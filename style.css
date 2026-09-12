@@ -80,21 +80,24 @@
         background-repeat: no-repeat;
       }
       #slide1 {
-        background-image: url("bg1.jpg");
+        background-image: url("bg1.svg");
       }
       #slide2 {
-        background-image: url("bg2.jpg");
+        background-image: url("bg2.svg");
       }
       #slide3 {
-        background-image: url("bg3.jpg");
+        background-image: url("bg3.svg");
+      }
+      #slide4 {
+        background-image: url("bg4.svg");
       }
 
       /* ---------- DOVE overlay (slide 1) ---------- */
       .dove-wrap {
         position: absolute;
         left: 50%;
-        top: 16.8%;
-        width: 64.4%;
+        top: 13.8%;
+        width: 65%;
         transform: translate(-50%, 0);
         animation: floaty 5s ease-in-out infinite;
       }
@@ -157,6 +160,40 @@
         50% {
           transform: scale(1.03);
         }
+      }
+
+      /* ---------- EUCARISTIA overlay (slide 2) ---------- */
+      .eucaristia-wrap {
+        position: absolute;
+        left: 50%;
+        top: 39%;
+        width: 61%;
+        transform: translate(-50%, 0);
+        animation: floaty 5.2s ease-in-out infinite;
+      }
+      .eucaristia-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        animation: breathe 3.2s ease-in-out infinite;
+        transform-origin: 50% 60%;
+      }
+
+      /* ---------- PADRES / HOUSE overlay (slide 4) ---------- */
+      .padres-wrap {
+        position: absolute;
+        left: 50%;
+        top: 60.5%;
+        width: 68.7%;
+        transform: translate(-50%, 0);
+        animation: floaty 5.8s ease-in-out infinite;
+      }
+      .padres-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        animation: breathe 3.6s ease-in-out infinite;
+        transform-origin: 50% 60%;
       }
 
       /* ---------- floating particles / sparkles (whole invitation) ---------- */
